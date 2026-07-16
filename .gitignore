@@ -1,0 +1,26 @@
+# Terraform
+infra/.terraform/
+infra/*.tfstate
+infra/*.tfstate.backup
+infra/.terraform.lock.hcl
+infra/handler.zip
+
+# Lambda zips
+**/*.zip
+
+# Node
+node_modules/
+services/generator/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# AWS
+*.csv
+.aws/
+
+# OS
+.DS_Store
+Thumbs.db
