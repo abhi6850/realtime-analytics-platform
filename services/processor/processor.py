@@ -16,7 +16,7 @@ dynamodb = boto3.resource('dynamodb', region_name='ap-south-1')
 QUEUE_URL      = os.environ.get('SQS_QUEUE_URL')
 TABLE_NAME     = os.environ.get('DYNAMODB_TABLE')
 table          = dynamodb.Table(TABLE_NAME)
-WINDOW_SECONDS = 30
+WINDOW_SECONDS = 30  # 30-second aggregation windows for time-series
 
 
 def process_batch(messages):
